@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zufällige Seite in der PDF</title>
+  <script>
+    function teleport() {
+      const baseLink = "https://drive.google.com/file/d/1MQxuQaze1QrE6VAOY39WH8IRHk5XuDdG/view?usp=sharing"; // Dein PDF-Link
+      const totalPages = 25; // Anzahl der Seiten in deiner PDF
+      const randomPage = Math.floor(Math.random() * totalPages) + 1; // Zufällige Seite wählen
+      window.location.href = baseLink + randomPage; // Weiterleitung
+    }
+  </script>
+</head>
+<body onload="teleport()">
+  <h1>Wird geladen...</h1>
+</body>
+</html>
